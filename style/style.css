@@ -1,0 +1,178 @@
+/* 
+    Document   : style
+    Created on : Oct 29, 2013, 7:37:09 AM
+    Author     : severin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+
+body {
+    background-color:#000000;
+    margin-left:14em;
+    margin-right:14em;
+    font-family:Arial;
+}
+.main {
+    color:white;
+    border: 1px solid silver;
+}
+a.main {
+    color:silver;
+    text-decoration:none;
+    border:none;
+}
+a.main:hover {
+    color:white;
+}
+.maintext {
+    padding-top:0.4em;
+    color:white;
+    text-align:left;
+    font-family:Arial;
+    
+}
+.construction {
+    padding-top:0.4em;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+    
+}
+ul#navigation {
+    margin: 0; padding: 0.8em;
+    text-align: center;
+    border: 1px solid silver;
+    background-color: black;
+}
+ul#navigation li {
+    list-style: none;
+    display: inline;
+    margin: 0.4em; padding: 0;
+    font-size:10pt;
+    font-weight:none;
+}
+
+ul#navigation a, ul#navigation span {
+    padding: 0.2em 1em;
+    text-decoration: none; font-weight: bold;
+    border: 1px solid silver;
+    border-left-color: white; border-top-color: white;
+    color: black; background-color: #silver;
+}
+ul#navigation a {
+    padding: 0.2em 1em;
+    text-decoration: none; font-weight: bold;
+    border: 1px solid silver;
+    border-left-color: white; border-top-color: white;
+    color: white; background-color: #black;
+}
+
+ul#navigation a:hover, ul#navigation span {
+    border-color: white;
+    border-left-color: black; border-top-color: black;
+    color: black; background-color: silver;
+}
+
+div#container {
+    border: 1px solid silver;
+    background-color:black;
+}
+td.bigfont {
+    font-size:24pt;
+    font-family: Verdana;
+    color:white;
+}
+td.smallfont {
+    font-size:8pt;
+    font-family: Verdana;
+    color:white;    
+}
+div#container {
+    min-height: 28em;
+    padding-top:0.25em;
+}
+
+.main {
+    color:white;
+    border: 1px solid silver;
+}
+a.main {
+    color:silver;
+    text-decoration:none;
+    border:none;
+}
+a.main:hover {
+    color:white;
+}
+.maintext {
+    padding-top:0.4em;
+    color:white;
+    text-align:left;
+    font-family:Arial;
+    
+}
+.construction {
+    padding-top:0.4em;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+    
+}
+ul#navigation {
+    margin: 0; padding: 0.8em;
+    text-align: center;
+    border: 1px solid silver;
+    background-color: black;
+}
+ul#navigation li {
+    list-style: none;
+    display: inline;
+    margin: 0.4em; padding: 0;
+    font-size:10pt;
+    font-weight:none;
+}
+
+ul#navigation a, ul#navigation span {
+    padding: 0.2em 1em;
+    text-decoration: none; font-weight: bold;
+    border: 1px solid silver;
+    border-left-color: white; border-top-color: white;
+    color: black; background-color: #silver;
+}
+ul#navigation a {
+    padding: 0.2em 1em;
+    text-decoration: none; font-weight: bold;
+    border: 1px solid silver;
+    border-left-color: white; border-top-color: white;
+    color: white; background-color: #black;
+}
+
+ul#navigation a:hover, ul#navigation span {
+    border-color: white;
+    border-left-color: black; border-top-color: black;
+    color: black; background-color: silver;
+}
+
+div#container {
+    border: 1px solid silver;
+    background-color:black;
+}
+td.bigfont {
+    font-size:24pt;
+    font-family: Verdana;
+    color:white;
+}
+td.smallfont {
+    font-size:8pt;
+    font-family: Verdana;
+    color:white;    
+}
+div#container {
+    min-height: 28em;
+    padding-top:0.25em;
+}
