@@ -29,7 +29,7 @@
             <br />
             <ul id="navigation">
                 <?php
-                echo(load_navigation($page));
+                	echo(load_navigation($page));
                 ?>
             </ul>
         </div>

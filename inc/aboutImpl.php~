@@ -1,6 +1,6 @@
 <?php
 
-require_once(ROOT_PATH."/inc/IPage.php");
+require_once("Ipage.php");
 
 class About implements IPage {
     

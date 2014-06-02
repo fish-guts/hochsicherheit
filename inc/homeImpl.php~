@@ -17,7 +17,7 @@ class Home implements IPage {
     }
 
     public function setPageTitle($title) {
-        $this->pageTitle = $title;
+        $this->pageTitle = "title";
 }
 
 ?>

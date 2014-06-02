@@ -83,7 +83,11 @@ div#container {
     border: 1px solid silver;
     background-color:black;
 }
-
+td.bigfont {
+    font-size:24pt;
+    font-family: Arial, Helvetica, Verdana;
+    color:white;
+}
 .bigfont {
     font-size:24pt;
     font-family: Arial, Helvetica, Verdana;
