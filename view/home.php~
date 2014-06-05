@@ -1,6 +1,6 @@
 <?php
-    	require_once(ROOT_PATH."/inc/homeImpl.php");
-	$page = new Home();
+    require_once(ROOT_PATH."/inc/homeImpl.php");
+    $page = new Home();
 ?>
 <table width="100%">
     <tr>

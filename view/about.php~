@@ -4,7 +4,7 @@
 ?>
 <table width="100%">
     <tr>
-        <td class="main"><?php echo $page->getPageTitle(); ?> </td>
+        <td class="bigfont"><?php echo $page->getPageTitle(); ?> </td>
     </tr>
     <tr>
         <td class="maintext" align="left" ><?php echo $page->getPageContent(); ?></td>
