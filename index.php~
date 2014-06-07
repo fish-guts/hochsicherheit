@@ -2,7 +2,6 @@
 <?php
 	ini_set('display_errors', 1);
 	error_reporting(~0);
-	session_start();
 	define('ROOT_PATH', realpath(__DIR__));
 	require_once(ROOT_PATH."/controller/ControllerImpl.php");
 	require_once(ROOT_PATH."/inc/main.php.inc");
@@ -15,9 +14,9 @@
 	$controller = new ControllerImpl($page);
 ?>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="style/style.css" />
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
         <title>Hoch-Sicherheit GmbH</title>
 	<script type="text/javascript">
 	// ref: http://diveintohtml5.org/detect.html

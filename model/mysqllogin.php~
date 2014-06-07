@@ -14,8 +14,8 @@ class MySQLLogin extends MySql {
 
 	 }
 
-	function login() {
-
+	function login($user,$pass) {
+		
 	}
 
 }

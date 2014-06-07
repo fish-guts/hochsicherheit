@@ -12,7 +12,7 @@ class TemplateView {
 	//override
 	public function render() {
 		ob_start();
-		echo $template;
+		echo $this->template;
 		$template = ROOT_PATH."/view/" . $this->template .".php";
 		if(!is_file($template)) {
 			return "Template not found";
