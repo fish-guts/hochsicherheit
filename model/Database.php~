@@ -3,7 +3,7 @@
 interface Database {
 
 	public function connect();
-	public function login();
+	public function login($dbh,$user,$pass);
 }
 
 

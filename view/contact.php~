@@ -1,14 +1,8 @@
 <tr>
-<td class="title">Kontakt<br /></td>
+<td class="title">Interner Bereich<br /></td>
 </tr>
 <?php
-$action_path  = "index.php?page=verify";
-
-if(isset($_GET['captchafailed'])) {
-	if(htmlspecialchars($_GET['captchafailed'])==true) {
-	       	echo "<p style=\"color:red;font-family:Arial;size:12pt;font-weight:bold\">Ungültige Captcha Validierung. Bitte erneut versuchen</p>";
-	}
-}
+$action_path  = "../inc/filehandler.php";
 ?>
 <form class="form" action="<?php echo $action_path ?>" method="POST" enctype="multipart/form-data">
 <fieldset class="form">
@@ -41,7 +35,7 @@ if(isset($_GET['captchafailed'])) {
 	</p>
 </fieldset>
 <fieldset class="form">
-	<legend>Anti-Spam</legend>
+	<legend>Anti-Spam - Bitte geben Sie die angezeigten Zeichen ein:</legend>
 	<?php
 		require_once(ROOT_PATH."/lib/recaptchalib.php");
 		$publickey = "6Le23vQSAAAAAHRs5inaiaJ0LignH-xFPGQuU6g4";

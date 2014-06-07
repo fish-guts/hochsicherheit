@@ -1,5 +1,5 @@
 <?php
-require_once("../model/Database.php");
+require_once("Database.php");
 class MySql implements Database {
 
 	private $db_host = "localhost";
@@ -8,16 +8,28 @@ class MySql implements Database {
 	private $db_user_table = "USERS";
 	private $db = "hochsicherheit";
 	public function connect() {
-		$conn = mysql_connect($this->db_host,$this->db_user,$this->db_pass)
-		or die("Verbindung zur Datenbank konnte nicht hergestellt werden");
-		mysql_select_db($this->db) or die ("Datenbank konnte nicht ausgewählt werden");
+
+		try {
+			return new PDO("mysql:host=$this->db_host;dbname=$this->db", $this->db_user, $this->db_pass);
+ 
+		}	
+		catch(PDOException $e) {
+			echo $e->getMessage();
+		}	
 	}
 
-	public function login($user,$pass)  {
+	public function login($dbh,$user,$pass)  {
+		$count = 0;
 		$sql = "SELECT username,password FROM ". $this->db_user_table ." WHERE username = '".$user."' AND  password ='".$pass."';";
-		$result = mysql_query($sql);
-//		return mysql_num_rows($result);
-return $sql;
+		$STH = $dbh->query($sql);
+ 
+		# setting the fetch mode
+		$STH->setFetchMode(PDO::FETCH_ASSOC);
+ 
+		while($row = $STH->fetch()) {	
+			$count++;	
+		}		
+		return $count;
 	}
 }
 

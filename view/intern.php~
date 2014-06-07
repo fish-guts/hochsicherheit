@@ -3,7 +3,7 @@
 </tr>
 <?php
 require_once(ROOT_PATH."/model/filemodel.php");
-$action_path  = "../inc/upload.php";
+$action_path  = "index.php?page=upload";
 
 ?>
 <form class="form" action="<?php echo $action_path ?>" method="POST" enctype="multipart/form-data">

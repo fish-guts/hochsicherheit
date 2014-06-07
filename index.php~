@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <?php
+	session_start();
 	ini_set('display_errors', 1);
 	error_reporting(~0);
+	//session_start();
 	define('ROOT_PATH', realpath(__DIR__));
 	require_once(ROOT_PATH."/controller/ControllerImpl.php");
 	require_once(ROOT_PATH."/inc/main.php.inc");

@@ -1,9 +1,6 @@
 <?php
 if(isset($_SESSION["validsession"])) {
-	echo $_SESSION["validsession"];
 	header("location:index.php?page=intern");
-} else {
-	echo "session ".$_SESSION["validsession"];
 }
 $action_path  = "model/login.php";
 
@@ -24,7 +21,7 @@ $action_path  = "model/login.php";
 	</p>
 	<p align="left" class="submit">
 		<input type="submit" value="Einloggen" />
-	</p>	
+	</p>
 </fieldset>
 
 </form>

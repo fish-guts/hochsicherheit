@@ -10,7 +10,7 @@ function load_navigation($page) {
     $key_services = "Dienstleistungen";
     $page_terms = "terms";
     $key_terms = "AGB";
-    $page_refs = "refs";
+    $page_refs = "references";
     $key_refs = "Referenzen";
     $page_links = "links";
     $key_links = "Links";

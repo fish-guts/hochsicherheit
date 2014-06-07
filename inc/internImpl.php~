@@ -2,10 +2,10 @@
 
 require_once(ROOT_PATH."/inc/IPage.php");
 
-class Intern implements IPage {
+class About implements IPage {
     
    private $introFile = "./content/intro.txt";
-   private $pageTitle = "Interner Bereich";
+   private $pageTitle = "&Uuml;ber uns";
     
     public function getPageContent() {
         $text = file_get_contents($this->introFile);

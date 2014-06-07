@@ -14,7 +14,7 @@ function load_navigation($page) {
     $key_refs = "Referenzen";
     $page_links = "links";
     $key_links = "Links";
-    $page_intern = "loginpage";
+    $page_intern = "intern";
     $key_intern = "Intern";
     $page_contact = "contact";
     $key_contact = "Kontakt";
