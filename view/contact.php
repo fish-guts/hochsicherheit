@@ -41,10 +41,10 @@ if(isset($_GET['captchafailed'])) {
 	</p>
 </fieldset>
 <fieldset class="form">
-	<legend>Anti-Spam</legend>
+	<legend>Anti-Spam - Bitte geben Sie die angezeigten Zeichen ein:</legend>
 	<?php
 		require_once(ROOT_PATH."/lib/recaptchalib.php");
-		$publickey = "6Lds3vQSAAAAAKrb1ECMJbAWo9BJbDuq0a3mW_I3";
+		$publickey = "6Le23vQSAAAAAHRs5inaiaJ0LignH-xFPGQuU6g4";
 		echo recaptcha_get_html($publickey);
 	?>
 </fieldset>
