@@ -4,19 +4,18 @@ require_once(ROOT_PATH."/inc/IPage.php");
 
 class About implements IPage {
     
-   private $introFile = "./content/intro.txt";
-   private $pageTitle = "&Uuml;ber uns";
+	private $introFile = "./model/aboutData.php";
+	private $pageTitle = "&Uuml;ber uns";
     
-    public function getPageContent() {
-        $text = file_get_contents($this->introFile);
-        return $text;
-    }
-    public function getPageTitle() {
-        return $this->pageTitle;
-    }
-    public function setPageTitle($title) {
-        $this->pageTitle = "title";
-    }
+	public function getPageContent() {
+		return file_get_contents($this->introFile);
+	}
+	public function getPageTitle() {
+		return $this->pageTitle;
+	}
+	public function setPageTitle($title) {
+		$this->pageTitle = "title";
+	}
 }
 
 ?>

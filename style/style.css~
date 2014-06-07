@@ -83,11 +83,7 @@ div#container {
     border: 1px solid silver;
     background-color:black;
 }
-td.bigfont {
-    font-size:24pt;
-    font-family: Arial, Helvetica, Verdana;
-    color:white;
-}
+
 .bigfont {
     font-size:24pt;
     font-family: Arial, Helvetica, Verdana;
@@ -181,3 +177,12 @@ div#container {
     min-height: 28em;
     padding-top:0.25em;
 }
+td.title {
+	font-size:24pt;
+	font-weight:bold;
+	color:white;
+}
+.termsItem {
+	color:white;
+}
+

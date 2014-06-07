@@ -177,3 +177,14 @@ div#container {
     min-height: 28em;
     padding-top:0.25em;
 }
+td.title {
+	font-size:24pt;
+	font-weight:bold;
+	color:white;
+}
+.termsItem {
+	color:white;
+}
+.termsText {
+	color:white;
+}
