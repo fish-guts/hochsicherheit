@@ -4,7 +4,7 @@ require_once(ROOT_PATH."/inc/IPage.php");
 
 class About implements IPage {
     
-	private $introFile = "/model/aboutData.php";
+	private $introFile = "./model/aboutData.php";
 	private $pageTitle = "&Uuml;ber uns";
     
 	public function getPageContent() {

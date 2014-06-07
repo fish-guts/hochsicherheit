@@ -1,20 +1,24 @@
 <?php
 
-class TemplateView implements Template {
+ini_set('display_errors', 1);
+error_reporting(~0);
+
+class TemplateView {
 	private $template;
 
-	public function __contruct($template) {
-		$this->template = $template;
+	function __construct($page) {
+		$this->template = $page;
 	}
 	//override
 	public function render() {
 		ob_start();
-		$template = "view/" .$this->template .".php";
+		echo $this->template;
+		$template = ROOT_PATH."/view/" . $this->template .".php";
 		if(!is_file($template)) {
 			return "Template not found";
 		}
 		include $template;
 		$view = ob_get_clean();
-		return $view;
+		return $template;
 	}
 }

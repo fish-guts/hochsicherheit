@@ -1,7 +1,5 @@
 <?php
 
-require_once("./controller/maincontroller.php");
-
 function load_navigation($page) {
     
     $page_home = "home";
@@ -34,15 +32,11 @@ function load_navigation($page) {
     );
     foreach($pagelist as $value) {
         if($page==$value[0]) {
-            $list = $list . "	<li><span>".$value[1]."</span></li>\n";
+            $list = $list . "		<li><span>".$value[1]."</span></li>\n";
         } else {
             $list = $list . "		<li><a href=\"index.php?page=".$value[0]."\">".$value[1]."</a></li>\n";            
         }
     }        
     return $list;
-}
-
-function load_controller($controller) {
-    return load_page($controller);
 }
 ?>

@@ -2,14 +2,13 @@
 
 require_once(ROOT_PATH."/inc/IPage.php");
 
-class About implements IPage {
+class Links implements IPage {
     
-   private $introFile = "./content/intro.txt";
-   private $pageTitle = "&Uuml;ber uns";
+   private $text = "./view/linksData.php";
+   private $pageTitle = "Links";
     
     public function getPageContent() {
-        $text = file_get_contents($this->introFile);
-        return $text;
+        return file_get_contents($this->text);
     }
     public function getPageTitle() {
         return $this->pageTitle;

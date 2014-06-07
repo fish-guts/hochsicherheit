@@ -4,12 +4,11 @@ require_once(ROOT_PATH."/inc/IPage.php");
 
 class References implements IPage {
     
-   private $introFile = "./content/referencesData.php";
+   private $text = "./view/referencesData.php";
    private $pageTitle = "Referenzen";
     
     public function getPageContent() {
-        $text = file_get_contents($this->introFile);
-        return $text;
+        return file_get_contents($this->text);
     }
     public function getPageTitle() {
         return $this->pageTitle;

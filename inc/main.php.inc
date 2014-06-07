@@ -1,7 +1,5 @@
 <?php
 
-require_once("./controller/maincontroller.php");
-
 function load_navigation($page) {
     
     $page_home = "home";
@@ -12,7 +10,7 @@ function load_navigation($page) {
     $key_services = "Dienstleistungen";
     $page_terms = "terms";
     $key_terms = "AGB";
-    $page_refs = "refs";
+    $page_refs = "references";
     $key_refs = "Referenzen";
     $page_links = "links";
     $key_links = "Links";
@@ -40,9 +38,5 @@ function load_navigation($page) {
         }
     }        
     return $list;
-}
-
-function load_controller($controller) {
-    return load_page($controller);
 }
 ?>

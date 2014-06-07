@@ -9,7 +9,7 @@ class HomeController implements Controller {
 		require("model/homeModel.php");
 		require("lib/class.TemplateView.php");
 		$this->model = new HomeModel();
-		$this->view = new TemplateView("Home");
+		$this->view = new TemplateView("home");
 	}
 
 	public function indexAction() {
