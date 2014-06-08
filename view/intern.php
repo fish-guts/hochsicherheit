@@ -3,15 +3,15 @@
 </tr>
 <?php
 require_once(ROOT_PATH."/model/filemodel.php");
-$action_path  = "../inc/upload.php";
+$action_path  = "inc/upload.php";
 
 ?>
 <form class="form" action="<?php echo $action_path ?>" method="POST" enctype="multipart/form-data">
 <fieldset class="form">
 	<legend>Datei hochladen</legend>
 	<p align="left" class="submit">
-		<input style="width: 250px; background-color:black; color:white; height:20px;" type="file" name="file">
-		<input style="background-color:silver" type="submit" value="Hochladen">
+		<input style="width: 250px; background-color:black; color:white; height:20px;" type="file" name="userfile">
+		<input style="background-color:silver" name="upload" id="upload" type="submit" value="Hochladen">
 	</p>
 	<p align="left" class="formradios" width="50%">
 		<label for="category">Kategorie</label>	<br />

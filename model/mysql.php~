@@ -1,7 +1,7 @@
 <?php
 require_once("Database.php");
 class MySql implements Database {
-
+fsdf
 	private $db_host = "localhost";
 	private	$db_user = "root";
 	private $db_pass = "hoppus123";
@@ -10,7 +10,8 @@ class MySql implements Database {
 	public function connect() {
 
 		try {
-			return new PDO("mysql:host=$this->db_host;dbname=$this->db", $this->db_user, $this->db_pass);
+			$hoststr = "mysql:host=".$this->db_host.";dbname=".$this->db;
+			return new PDO($hoststr, $this->db_user, $this->db_pass);
  
 		}	
 		catch(PDOException $e) {

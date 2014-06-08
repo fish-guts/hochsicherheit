@@ -5,7 +5,8 @@ require_once("mysql.php");
 class FileModel extends MySql {
 
 	function get_files($type) {
-		$dbh = MySql::connect();
+		$obj = new MySql();
+		$dbh = $obj->connect();
 		$sql =  "SELECT id,filename,size FROM document ".
 			"LEFT JOIN category on document.category = category.id ".
 			"WHERE category.name = :category";
