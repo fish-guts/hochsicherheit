@@ -14,7 +14,7 @@ class FileModel extends MySql {
 		$sth = $dbh->prepare($sql);
 		$sth->bindParam(':category', $type, PDO::PARAM_STR);
 		$sth->execute();
-		$result = $sth->fetchAll(PDO::FETCH_ASSOC,0);
+		$result = $sth->fetchAll(PDO::FETCH_ASSOC);
 		
 
 		return $result;

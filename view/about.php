@@ -14,4 +14,4 @@
 	<tr>
         <td class="maintext" align="left" ><?php echo $page->getPageContent(); ?></td>
     </tr>
-</table>>
+</table>
