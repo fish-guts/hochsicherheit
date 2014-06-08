@@ -13,10 +13,14 @@ $type = $result["type"];
 $size = $result["size"];
 $filename = $result["name"];
 $dataT = $result["content"];
-header("Content-Type:".$type ."; name=".$filename); 
-header("Content-Transfer-Encoding: binary"); 
-header("Accept-Ranges: bytes"); 
-header("Content-Length: ".$size); 
-header('Content-Disposition: attachment; filename='.$filename); 
-readfile($filename);
+ header('Content-Type: ' . $type);
+ header('Content-Disposition: attachment; filename="'.$filename.'"');
+ header("Content-Transfer-Encoding: binary");
+ header('Accept-Ranges: bytes');
+ob_clean();
+flush();
+	readfile($filename);
+
 ?>
+
+
