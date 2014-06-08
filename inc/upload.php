@@ -1,6 +1,7 @@
 <?php
 require_once("../model/mysql.php");
-print_r($_FILES['userfile']);
+
+
 if($_FILES['userfile']['size'] > 0) {
 	$fileName = $_FILES['userfile']['name'];
 	$tmpName  = $_FILES['userfile']['tmp_name'];

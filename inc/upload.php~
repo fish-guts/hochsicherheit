@@ -1,6 +1,7 @@
 <?php
 require_once("../model/mysql.php");
-print_r($_FILES['userfile']);
+
+
 if($_FILES['userfile']['size'] > 0) {
 	$fileName = $_FILES['userfile']['name'];
 	$tmpName  = $_FILES['userfile']['tmp_name'];
@@ -28,7 +29,7 @@ if($_FILES['userfile']['size'] > 0) {
 	$sth->bindParam(':type', $fileType, PDO::PARAM_STR);
 	$sth->bindParam(':content',$content,PDO::PARAM_STR);
 	$sth->execute();
-	header("location:../index.php?page=intern");
+	header("location:../index.php?page=intern&uploadsuccess");
 	} else {
 	header("location:../index.php?page=intern");
 }

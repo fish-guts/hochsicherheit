@@ -3,6 +3,7 @@
 </tr>
 <?php
 require_once(ROOT_PATH."/model/filemodel.php");
+require_once(ROOT_PATH."/inc/main.php.inc");
 $action_path  = "inc/upload.php";
 
 ?>
@@ -20,21 +21,37 @@ $action_path  = "inc/upload.php";
 	</p>
 </fieldset>
 <fieldset class="form">
-	<legend>Dokumente</legend>
-	<? 
-</fieldset>
-<fieldset class="form">
-	<legend>Vorschriften</legend>	
-	<table width="50%">
+	<legend>Informationen</legend>
+	<form action="" method="GET">
+	<table width="100%">
 	<?php
 		$file = new FileModel();
-		$docs = $file->get_files("Dokumente");
+		$docs = $file->get_files("Informationen");
 		foreach($docs as $key => $value) {
 			$str = "<tr>".
-				"<td>".$value."</td>".
+				"<td width=\"60%\"><a class=\"main\" href=\"view/download.php?fileid=".$value['id']."\">".$value['name']."</a></td>".
+				"<td width=\"10%\">[".formatSizeUnits($value['size'])."]</td>".
+				"<td width=\"30%\"><a class=\"main\" href=\"inc/delete.php?fileid=".$value['id']."\">Löschen</a></td>".			
 				"</tr>";
 			echo $str;
 		}
 	?>
+	</table>
+	</form>
+</fieldset>
+<fieldset class="form">
+	<legend>Vorschriften</legend>	
+	<table width="75%">
+	<?php
+		$file = new FileModel();
+		$docs = $file->get_files("Vorschriften");
+		foreach($docs as $key => $value) {
+			$str = "<tr>".
+					"<td>".$value['name']."</td>".
+				"</tr>";
+			echo $str;
+		}
+	?>
+	</table>
 </fieldset>
 </form>

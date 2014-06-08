@@ -6,15 +6,16 @@ class FileModel extends MySql {
 
 	function get_files($type) {
 		$obj = new MySql();
-		$dbh = $obj::connect();
-		$sql =  "SELECT id,filename,size FROM document ".
+		$dbh = $obj->connect();
+		$sql =  "SELECT document.id,document.name,size FROM document ".
 			"LEFT JOIN category on document.category = category.id ".
 			"WHERE category.name = :category";
 
 		$sth = $dbh->prepare($sql);
-		$sth->bindParam(':category', $type, PDO::PARAM_STR, 12);
+		$sth->bindParam(':category', $type, PDO::PARAM_STR);
 		$sth->execute();
-		$result = $sth->fetchAll();
+		$result = $sth->fetchAll(PDO::FETCH_ASSOC,0);
+		
 
 		return $result;
  	}
