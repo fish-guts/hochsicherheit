@@ -15,8 +15,6 @@ class ControllerImpl implements Controller {
 
 	}
 	public function indexAction() {
-        	//$entries = $this->model->getEntries();
-	        //$this->view->assign('entries', $entries);
 	        return $this->view->render();
 	}
 }
