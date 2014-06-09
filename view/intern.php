@@ -1,4 +1,8 @@
 <?php
+
+if(!isset($_SESSION["validsession"])) {
+	header("location:index.php?page=loginpage");
+}
 require_once(ROOT_PATH."/model/filemodel.php");
 require_once(ROOT_PATH."/inc/main.php.inc");
 $action_path  = "inc/upload.php";

@@ -12,7 +12,7 @@ $action_path  = "inc/upload.php";
 <?php
 if(isset($_GET['uploadsuccess'])) {
 	if(htmlspecialchars($_GET['uploadsuccess'])==true) {
-        	echo "<p style=\"color:#white;font-family:Arial;size:18pt\">Datei erfolgreich hochgeladen. </p>";
+        	echo "<p style=\"color:white;font-family:Arial;size:18pt;text-align:left\">Datei erfolgreich hochgeladen. </p>";
 	}
 }
 ?>
