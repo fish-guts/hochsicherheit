@@ -6,12 +6,12 @@ $action_path  = "index.php?page=verify";
 
 if(isset($_GET['captchafailed'])) {
 	if(htmlspecialchars($_GET['captchafailed'])==true) {
-	       	echo "<p style=\"color:white;font-family:Arial;size:12pt;font-weight:bold; text-align:left\">Ungültige Captcha Validierung. Bitte erneut versuchen</p>";
+	       	echo "<p style=\"color:white;font-family:Arial;size:12pt;font-weight:bold; test-align:left\">Ungültige Captcha Validierung. Bitte erneut versuchen</p>";
 	}
 }
 else if(isset($_GET['emailsuccess'])) {
 	if(htmlspecialchars($_GET['emailsuccess'])==true) {
-        	echo "<p style=\"color:white;font-family:Arial;size:18pt;text-align:left\">Vielen Dank für Ihre Nachricht. Wir werden uns so rasch als möglich um Ihr Anliegen kümmern</p>";
+        	echo "<p style=\"color:white;font-family:Arial;size:18pt\">Vielen Dank für Ihre Nachricht. Wir werden uns so rasch als möglich um Ihr Anliegen kümmern</p>";
 	}
 }
 ?>

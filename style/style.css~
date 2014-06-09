@@ -178,7 +178,6 @@ div#container {
     padding-top:0.25em;
 }
 td.title {
-	text-align:left;
 	font-size:24pt;
 	font-weight:bold;
 	color:white;

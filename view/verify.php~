@@ -24,7 +24,7 @@ if (!$resp->is_valid) {
         	echo "Es ist ein Fehler aufgetreten";
 	} else {
 	    header('Location: index.php?page=contact&emailsent=true');
-
+        	echo "<p style=\"color:#white;font-family:Arial;size:18pt\">Vielen Dank für Ihre Nachricht. Wir werden uns so rasch als möglich um Ihr Anliegen kümmern</p>";
 	}
 }
 ?>

@@ -12,7 +12,7 @@ if($_FILES['userfile']['size'] > 0) {
 	fclose($fp);
 	$mysql = new MySql();
 	$mysql->add_document($file,$category,$content);
-	header("location:../index.php?page=intern&uploadsuccess=true");
+	header("location:../index.php?page=intern&uploadsuccess");
 	} else {
 	header("location:../index.php?page=intern");
 }
