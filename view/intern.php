@@ -41,17 +41,21 @@ $action_path  = "inc/upload.php";
 </fieldset>
 <fieldset class="form">
 	<legend>Vorschriften</legend>	
-	<table width="75%">
+	<form action="" method="GET">
+	<table width="100%">
 	<?php
 		$file = new FileModel();
 		$docs = $file->get_files("Vorschriften");
 		foreach($docs as $key => $value) {
 			$str = "<tr>".
-					"<td>".$value['name']."</td>".
+				"<td width=\"60%\"><a class=\"main\" href=\"view/download.php?fileid=".$value['id']."\">".$value['name']."</a></td>".
+				"<td width=\"10%\">[".formatSizeUnits($value['size'])."]</td>".
+				"<td width=\"30%\"><a class=\"main\" href=\"inc/delete.php?fileid=".$value['id']."\">Löschen</a></td>".			
 				"</tr>";
 			echo $str;
 		}
 	?>
 	</table>
+	</form>
 </fieldset>
 </form>
